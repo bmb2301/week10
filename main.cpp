@@ -123,7 +123,7 @@ int main() {
     }
 }*/
 //p8
-int main() {
+/*int main() {
     const int ROLLS = 10000;
     int count[6] = {0};
     srand(time(0));
@@ -135,5 +135,63 @@ int main() {
     for (int i = 0; i < 6; i++) {
         cout << (i + 1) << "\t\t" << count[i] << endl;
     }
-    return 0;
+}*/
+//p9
+/*void reverseArray(int arr[], int start, int end) {
+    for (int i = end -1; i >= start; i--) {
+        cout << arr[i] << " ";
+    }
 }
+int main() {
+    int start , end;
+    cin >> start >> end;
+    int arr[start];
+    for (int i = start; i < end; i++) {
+        cin >> arr[i];
+    }
+    reverseArray(arr, start, end);
+}*/
+//p10
+/*void reverseArray(int arr[], int n) {
+    if (n==0) return;
+    cout <<arr[n-1]<<" ";
+    reverseArray(arr, n-1);
+}
+int main() {
+    int n ;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    reverseArray(arr, n);
+}*/
+//p11
+/*int main() {
+    int target=9;
+    int nums[4]={2,7,11,15};
+    int n = sizeof(nums)/sizeof(nums[0]);
+    for (int i = 0; i < n; i++) {
+        for (int j = i+1; j < n; j++) {
+            if (nums[i]+nums[j] == target) {
+                cout <<'['<< i<<',' << j<<']'<< endl;
+                return 0;
+            }
+        }
+    }
+}*/
+//p12
+/*int main() {
+    int n,j;
+    cin >> n;
+    int a[n];
+    for(int i=0;i<n;i++) {
+        cin >> a[i];
+    }
+    for (int i=0;i<n;i++) {
+        if (a[i]!=a[i+1] && a[i]!=a[i-1]) {
+           j=i;
+        }
+    }
+    cout << j+1 << endl;
+}*/
