@@ -4,13 +4,13 @@
 using namespace std;
 //p1
 /*int main(){
-int n ;
-cin >> n;
-int the_number[n];
-for(int i=0;i<n;i++){
-cin >> the_number[i];}
-for(int i=0;i<n;i++){
-cout << the_number[i] << " ";}
+    int n ;
+    cin >> n;
+    int the_number[n];
+    for(int i=0;i<n;i++){
+        cin >> the_number[i];}
+    for(int i=0;i<n;i++){
+        cout << the_number[i] << " ";}
 }*/
 //p2
 /*float avg(int n, float num[n]) {
@@ -53,7 +53,7 @@ int main() {
     int max=0;
     int index=0;
     for (int i=0; i<size; i++) {
-        if (array[i] > max) {
+        if (array[i] >= max) {
             max = array[i];
             index = i;
         }
@@ -182,16 +182,18 @@ int main() {
 }*/
 //p12
 /*int main() {
-    int n,j;
+    int n;
     cin >> n;
-    int a[n];
+    int a[n],c;
     for(int i=0;i<n;i++) {
         cin >> a[i];
     }
+    if (a[0]==a[1]) c=a[0];
+    else if (a[0]==a[2]) c=a[0];
+        else c=a[1];
     for (int i=0;i<n;i++) {
-        if (a[i]!=a[i+1] && a[i]!=a[i-1]) {
-           j=i;
+        if (a[i]!=c) {
+            cout << i+1;
         }
     }
-    cout << j+1 << endl;
 }*/
